@@ -8,6 +8,7 @@ import piggyBankPhone from "../assets/piggy-bank-phone.png";
 import logo from "../assets/nexcapeLogo.png"
 import teamPhoto1 from "../assets/tathagatSirImage.png"
 import teamPhoto2 from "../assets/ranaSirImage.jpg"
+import teamPhoto3 from "../assets/saifSirImage.jpg"
 
 export const Home = () => {
   return (
@@ -214,14 +215,19 @@ export const KeyBenefits = () => {
 
 const teamMembers = [
   {
-    name: "Tathagat Sir",
+    name: "Tathagat Kumar",
     role: "Chief Mentor",
     imageUrl: teamPhoto1,
   },
   {
-    name: "Rana Sir",
-    role: "Senior Advisor",
+    name: "Prashant Singh Rana",
+    role: "Chief Mentor",
     imageUrl: teamPhoto2,
+  },
+  {
+    name: "Saif Nalband",
+    role: "Chief Mentor",
+    imageUrl: teamPhoto3,
   },
 ];
 
@@ -235,7 +241,7 @@ export const TeamSection = () => {
           fundraising journey.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
           {teamMembers.map((member, index) => (
             <div key={index} className="flex flex-col items-center">
               <div className="relative w-32 h-32 mb-4">
