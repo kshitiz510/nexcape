@@ -5,13 +5,17 @@ import { MessageSquare, Heart } from "lucide-react";
 import homePhoneScreens from "../assets/home-phone-screens.png";
 import piggyBank from "../assets/piggy-bank.jpg";
 import piggyBankPhone from "../assets/piggy-bank-phone.png";
+import logo from "../assets/nexcapeLogo.png"
+import teamPhoto1 from "../assets/tathagatSirImage.png"
+import teamPhoto2 from "../assets/ranaSirImage.jpg"
 
 export const Home = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="flex items-center justify-between px-4 py-4 md:px-6 lg:px-8">
-        <div className="text-xl font-semibold text-[#18181b]">Nexcape Labs</div>
+        {/* <div className="text-xl font-semibold text-[#18181b]"></div> */}
+        <img src={logo} alt="Nexcape Labs Logo" className="w-32" />
 
         <div className="hidden md:flex items-center flex-1 max-w-xl mx-8">
           <Input
@@ -210,52 +214,14 @@ export const KeyBenefits = () => {
 
 const teamMembers = [
   {
-    name: "John Doe",
-    role: "Funding Strategist",
-    imageUrl:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nexcape__Copy_-IFlhhqYSMR6MHLlnppltRhEkwnhpnt.png",
+    name: "Tathagat Sir",
+    role: "Chief Mentor",
+    imageUrl: teamPhoto1,
   },
   {
-    name: "Jane Smith",
-    role: "Pitch Deck Expert",
-    imageUrl:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nexcape__Copy_-IFlhhqYSMR6MHLlnppltRhEkwnhpnt.png",
-  },
-  {
-    name: "Emily Johnson",
-    role: "Investor Relations",
-    imageUrl:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nexcape__Copy_-IFlhhqYSMR6MHLlnppltRhEkwnhpnt.png",
-  },
-  {
-    name: "Michael Brown",
-    role: "Financial Advisor",
-    imageUrl:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nexcape__Copy_-IFlhhqYSMR6MHLlnppltRhEkwnhpnt.png",
-  },
-  {
-    name: "Sarah Davis",
-    role: "Business Consultant",
-    imageUrl:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nexcape__Copy_-IFlhhqYSMR6MHLlnppltRhEkwnhpnt.png",
-  },
-  {
-    name: "David Wilson",
-    role: "Marketing Specialist",
-    imageUrl:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nexcape__Copy_-IFlhhqYSMR6MHLlnppltRhEkwnhpnt.png",
-  },
-  {
-    name: "Laura Garcia",
-    role: "Startup Coach",
-    imageUrl:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nexcape__Copy_-IFlhhqYSMR6MHLlnppltRhEkwnhpnt.png",
-  },
-  {
-    name: "James Martinez",
-    role: "Growth Hacker",
-    imageUrl:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nexcape__Copy_-IFlhhqYSMR6MHLlnppltRhEkwnhpnt.png",
+    name: "Rana Sir",
+    role: "Senior Advisor",
+    imageUrl: teamPhoto2,
   },
 ];
 
@@ -274,7 +240,7 @@ export const TeamSection = () => {
             <div key={index} className="flex flex-col items-center">
               <div className="relative w-32 h-32 mb-4">
                 <img
-                  src={`https://s3-alpha-sig.figma.com/img/d3d9/5c3a/bc56197727b955208b48d8adff8fc170?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=R5-WNgKKFA4ZM1ZRuGksw8JfxhPhkmij4BCUORz2OGDLGKcsaeI76yMTAx5IGOSCy-p5fz7hBxmx8VDCOOH8TgiSpzsK5EExjjmQ9BvEZqzV78T1~YVIzKHqzZfqAPxcRnOBVIMnRC-FojNQNCVpXVTnS6HV7kbzpYHF3Qb28sq2GvY9ixbOCj6I0VeJM0Zw26uEphsTakATnrMt3fRelXwlq1akGo~4Qm24T4Y~XIpc43DH-lgXeyIJ3yQakIdCBTFBdUnBilwfKg6vW4XkyRG0WhpzX5XUv17JoHNeq5McCtXCcLaDk67LGS5-y58IDnZlPsNf0hnATH3vk9hTLg__`}
+                  src={member.imageUrl}
                   alt={`${member.name}'s profile`}
                   className="rounded-full object-cover"
                   style={{ width: "100%", height: "100%" }}
